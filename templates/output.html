@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container ">
+        <div class="row vh-100 d-flex justify-content-center align-items-center">
+            <div class="col-md-6">
+                <h1 class="text-center">Prime Numbers up to {{ number }}</h1>
+                <p class="text-center">{{ primes|join:", " }}</p>
+                <div class="text-center">
+                    <a href="{% url 'input_page' %}" class="btn btn-secondary">Check Another Number</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
